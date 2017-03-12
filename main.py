@@ -26,20 +26,18 @@ def get_apkfiles(path):
     return [path + file_name for file_name in os.listdir(path)]
 
 
-def check_apk_mal_methods(androguard_obj, mal_methods):
+def check_apk_mal_methods(dvm_obj, mal_methods):
     """
     获取应用的恶意API调用次数
     :param androguard_obj: androguard对象
     :param mal_methods: 已知恶意API库
     :return: 调用次数
     """
-    d = androguard_obj[1]
     i = 0
-    apk_methods = d.get_methods()
+    apk_methods = dvm_obj.get_methods()
     for apk_method in apk_methods:
         for mal_method in mal_methods:
             if mal_method in str(apk_method):
-                print apk_method
                 i += 1
     return i
 
@@ -58,7 +56,7 @@ def get_mal_methods(path):
 
 apks_path = 'softwares/'
 apk_path = 'WeatherForecast.apk'
-mal_methods_path = 'mal_methods.txt'
+mal_methods_path = 'sensitive_methods.txt'
 
 if __name__ == '__main__':
     # apkfiles = get_apkfiles(apks_path)
