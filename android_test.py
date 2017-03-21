@@ -53,7 +53,7 @@ def check_mal_per_com(apk_obj, sensitive_permissions_combinations_file):
     检查apk文件的权限是否有敏感权限组合
     """
     if not apk_obj:
-        return None
+        return []
     apk_permissions = apk_obj.get_permissions()
     sensitive_per_comb_file = open(sensitive_permissions_combinations_file)
     sensitive_per_comb_objs = []
@@ -85,7 +85,7 @@ def check_apk_sensitive_methods(dvm_obj, mal_methods):
     :return: 调用次数
     """
     if not dvm_obj:
-        return None
+        return -1
     i = 0
     apk_methods = dvm_obj.get_methods()
     for apk_method in apk_methods:
@@ -115,9 +115,9 @@ def get_all_apk_files(mpath):
     list = []
     for p in paths:
         if os.path.isdir(mpath + '/' + p):
-            list += get_all_apk_files(mpath + '/' + p)
+            list += get_all_apk_files(mpath + '/' + p.decode(encoding='utf8'))
         elif p[-4:] == '.apk':
-            list.append(mpath + '/' + p)
+            list.append(mpath + '/' + p.decode(encoding='utf8'))
     return list
 
 
@@ -125,21 +125,21 @@ def get_all_apk_files(mpath):
 sp = '/Users/sundiz/Documents/WorkPlaces/AndroidStudio/MyApplication/app/app-release.apk'
 apk_file1 = '/Users/sundiz/Desktop/weixin.apk'
 apk_file2 = '/Users/sundiz/Desktop/new.apk'
-sensitive_permissions_combinations_file = 'sensitive_permissions_combinations.txt'  #敏感权限组合文件路径
-all_permissions_file = 'permissions.txt'    #所有权限文件
-apks_path = '/Users/sundiz/Desktop/androidmalware'  #恶意软件集合路径
-sensitive_methods_path = 'pretty_sensitive_methods.txt' #敏感API文件路径
+sensitive_permissions_combinations_file = 'sensitive_permissions_combinations.txt'  # 敏感权限组合文件路径
+all_permissions_file = 'permissions.txt'  # 所有权限文件
+mal_apks_path = '/Users/sundiz/Desktop/androidmalware'  # 恶意软件集合路径
+offical_apks_path = '/Users/sundiz/Desktop/androidapp'  # 官方软件集合路径
+sensitive_methods_path = 'pretty_sensitive_methods.txt'  # 敏感API文件路径
 if __name__ == '__main__':
+    # 计算雅卡尔系数
     # a1, d1, x1 = get_androguard_obj(sp)
     # a2, d2, x2 = get_androguard_obj(apk_file2)
     # jaccard = check_jaccard_coefficent(a1, a2)
     # print jaccard
-    # apk_sensitive_per_com_objs = check_mal_per_com(a1, sensitive_permissions_combinations_file)
-    # for apk_sensitive_per_com_obj in apk_sensitive_per_com_objs:
-    #     print apk_sensitive_per_com_obj
+    # 敏感权限和敏感API综合测试
     sen_per_com_result = {}  # 敏感权限组合检查结果
     sen_met_result = {}  # 敏感API检查结果
-    apks = get_all_apk_files(apks_path)  # 所有apk的路径
+    apks = get_all_apk_files(offical_apks_path)  # 所有apk的路径
     for apkfile in apks:
         a = get_apk_obj(apkfile)
         d = get_dvm_obj(apkfile)
@@ -164,4 +164,3 @@ if __name__ == '__main__':
             has2attr_list.append(apkfile)
             count3 += 1
     print '敏感权限组合查处率:', count1 / (len(apks) + 0.0), '敏感API查处率:', count2 / (len(apks) + 0.0), '两项都有查处率:', count3 / (len(apks) + 0.0)
-

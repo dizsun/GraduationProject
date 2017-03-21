@@ -59,7 +59,7 @@ apk_path = 'WeatherForecast.apk'
 mal_methods_path = 'sensitive_methods.txt'
 
 if __name__ == '__main__':
-    # apkfiles = get_apkfiles(apks_path)
+    # apkfiles = get_apkfiles(mal_apks_path)
     # mal_methods = get_mal_methods(mal_methods_path)
     # for apkfile in apkfiles:
     #     print apkfile
