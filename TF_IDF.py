@@ -1,6 +1,8 @@
 # coding=UTF-8
 import math
 import APKManager
+import os
+import platform
 
 
 class TFIDF:
@@ -69,17 +71,20 @@ class TFIDF:
 
 
 mal_apks_path = '/Users/sundiz/Desktop/androidmalware/Android'
+mal_apks_path_win='D:\\malwares\\android-malware-master\\Android\\Android'
+
 if __name__ == '__main__':
-    apks_path = APKManager.get_all_apk_files(mal_apks_path)
+    apks_path = APKManager.get_all_apk_files(mal_apks_path_win)
     apk_methods = {}
     methods = []
     for apk_path in apks_path:
         mal_apk = APKManager.APKManager().get_dvm_obj(apk_path)
-        apk_methods[apk_path] = mal_apk.get_methods()
-        methods.append(apk_methods[apk_path])
+        if mal_apk:
+            apk_methods[apk_path] = mal_apk.get_methods()
+            methods.append(apk_methods[apk_path])
     tfidf = TFIDF(methods)
     for apk_name in apk_methods.keys():
         print '*'*150
-        print apk_name.replace(mal_apks_path + '/', '')
+        print apk_name.replace(mal_apks_path + APKManager.platform_slash(), '')
         for m in tfidf.get_tf_idf(apk_methods[apk_name], 5):
             print m

@@ -2,18 +2,25 @@
 from androguard.core.bytecodes import apk, dvm
 from androguard.core.analysis import analysis
 import os
+import platform
 
+
+def platform_slash():
+    if "Windows" in platform.platform():
+        return '\\'
+    else:
+        return '/'
 
 def get_all_apk_files(mpath):
-    if mpath[-1] == '/':
+    if mpath[-1] == platform_slash():
         mpath = mpath[:-1]
     paths = os.listdir(mpath)
     list = []
     for p in paths:
-        if os.path.isdir(mpath + '/' + p):
-            list += get_all_apk_files(mpath + '/' + p.decode(encoding='utf8'))
+        if os.path.isdir(mpath + platform_slash() + p):
+            list += get_all_apk_files(mpath + platform_slash() + p.decode(encoding='utf8'))
         elif p[-4:] == '.apk':
-            list.append(mpath + '/' + p.decode(encoding='utf8'))
+            list.append(mpath + platform_slash() + p.decode(encoding='utf8'))
     return list
 
 
