@@ -1,8 +1,6 @@
 # coding=UTF-8
 import math
 import APKManager
-import os
-import platform
 
 
 class TFIDF:
@@ -11,6 +9,7 @@ class TFIDF:
         self.tfs = []
         self.idf = {}
         self.terms = set()
+        self.term_idf = {}  # 非log
 
     def get_tf(self, document):
         """
@@ -42,6 +41,11 @@ class TFIDF:
                     term_idf += 1
             self.idf[term] = math.log(len(self.tfs) / (term_idf + 1.0), len(self.tfs))
 
+    def update_idf(self, document):
+        for item in document:
+            self.terms.add(item)
+            self.term_idf[item] = self.term_idf.get(item, 0) + 1
+
     @staticmethod
     def get_top_term(dic, top):
         temp_dic = []
@@ -71,20 +75,17 @@ class TFIDF:
 
 
 mal_apks_path = '/Users/sundiz/Desktop/androidmalware/Android'
-mal_apks_path_win='D:\\malwares\\android-malware-master\\Android\\Android'
-
 if __name__ == '__main__':
-    apks_path = APKManager.get_all_apk_files(mal_apks_path_win)
+    apks_path = APKManager.get_all_apk_files(mal_apks_path)
     apk_methods = {}
     methods = []
     for apk_path in apks_path:
         mal_apk = APKManager.APKManager().get_dvm_obj(apk_path)
-        if mal_apk:
-            apk_methods[apk_path] = mal_apk.get_methods()
-            methods.append(apk_methods[apk_path])
+        apk_methods[apk_path] = mal_apk.get_methods()
+        methods.append(apk_methods[apk_path])
     tfidf = TFIDF(methods)
     for apk_name in apk_methods.keys():
-        print '*'*150
-        print apk_name.replace(mal_apks_path + APKManager.platform_slash(), '')
+        print '*' * 150
+        print apk_name.replace(mal_apks_path + '/', '')
         for m in tfidf.get_tf_idf(apk_methods[apk_name], 5):
             print m
