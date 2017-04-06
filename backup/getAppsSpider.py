@@ -3,6 +3,7 @@ import re
 import os
 import urllib2
 import threading
+
 app_path_mac = '/Users/sundiz/Desktop/androidapp/'
 app_path_win = 'C:\\Users\\dizsun\\Desktop\\app\\'
 url = 'https://apkpure.com/cn/app'
@@ -52,3 +53,8 @@ def download_onepage_apk(url):
 #     t.start()
 # t.join()
 # print 'all task has completed!'
+# urls = re.findall('<a href="(.*?)"', get_html_raw('http://app.mi.com/details?id=com.tencent.tmgp.sgame/download/108048'), re.S)
+# for url in urls:
+#     print url
+# print get_html_raw('http://app.mi.com/details?id=com.tencent.tmgp.sgame/download/108048')
+download_apk('http://f1.market.xiaomi.com/download/AppStore/027665d63a558c931059b2d40de671cdefa433330/com.tencent.tmgp.sgame.apk', 'wangzherongyao')
