@@ -22,6 +22,7 @@ def get_all_apk_files(mpath):
 
 class APKManager:
     """获取APk文件对象的工具"""
+
     def __init__(self, apkfile):
         self.apkfile = apkfile
 
@@ -77,6 +78,17 @@ class APKManager:
             return False
 
 
+class APP:
+    def __init__(self):
+        self.apk_md5 = ""
+        self.apk_sign_md5 = ""
+        self.apk_name = ""
+        self.apk_package_name = ""
+        self.apk_methods = []
+        self.apk_permissions = []
+        self.apk_flag = ""
+
+
 def check_apk(apk_paths):
     """检测apk完整性"""
     goodapk = 0
@@ -94,24 +106,13 @@ def check_apk(apk_paths):
 
 if '__main__' == __name__:
     # apkfile2 = r'D:\malwares\android-malware-master\android-malware-master\triada\2fd9f60cf6a1ec8901feba1883d98c13bb385c54c226eb1c34b657e6af8e11aa'
-    # apkfile1 = r'D:\malwares\android-malware-master\android-malware-master\triada\README'
+    apkfile1 = r'D:\malwares\android-malware-master\Android\Android\1ca231169ab226ceab0f5c71450097df.apk'
     apks_path = r'D:\malwares'
-    apk_paths = get_all_apk_files(apks_path)
-    threads = [threading.Thread(target=check_apk, args=(apk_paths[0:500],)),
-               threading.Thread(target=check_apk, args=(apk_paths[500:1000],)),
-               threading.Thread(target=check_apk, args=(apk_paths[1000:1500],)),
-               threading.Thread(target=check_apk, args=(apk_paths[1500:2000],)),
-               threading.Thread(target=check_apk, args=(apk_paths[2000:2500],)),
-               threading.Thread(target=check_apk, args=(apk_paths[2500:3000],)),
-               threading.Thread(target=check_apk, args=(apk_paths[3000:3500],)),
-               threading.Thread(target=check_apk, args=(apk_paths[3500:4000],)),
-               threading.Thread(target=check_apk, args=(apk_paths[4000:4500],)),
-               threading.Thread(target=check_apk, args=(apk_paths[4500:5000],)),
-               threading.Thread(target=check_apk, args=(apk_paths[5000:5500],)),
-               threading.Thread(target=check_apk, args=(apk_paths[5500:],))
-               ]
-    for t in threads:
-        # t.setDaemon(True)
-        t.start()
-        # t.join()
-    print 'all task has completed!'
+    # apk_paths = get_all_apk_files(apks_path)
+    pers = set()
+    for line in open('mpermissions.txt'):
+        pers.add(os.path.splitext(line.strip())[1].replace('.', ''))
+    f = open('mpers.txt', 'w')
+    for per in pers:
+        f.write(per + '\n')
+    f.close()
