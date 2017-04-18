@@ -1,0 +1,408 @@
+D:\malwares\android-malware-master\Android\Android\012c298c4796d5977564a0867b66de91.apk
+D:\malwares\android-malware-master\Android\Android\027fd5a5ddad66a2ea9b06ad5403b406.apk
+D:\malwares\android-malware-master\Android\Android\02a2ba8174893890cf213152a6b190f1.apk
+D:\malwares\android-malware-master\Android\Android\037b29083bb265fa5a852865ad06bbda.apk
+D:\malwares\android-malware-master\Android\Android\061682ea116d56a7e839488382b34951e2e25354.apk
+D:\malwares\android-malware-master\Android\Android\066fa15bb160865254ea3374a24f96ad.apk
+D:\malwares\android-malware-master\Android\Android\06e481f10da2a9552dd5c9ee4525f233.apk
+D:\malwares\android-malware-master\Android\Android\070ca057c88cfb00f92bfff15361834c4c286755.apk
+D:\malwares\android-malware-master\Android\Android\0887e63f02afbc1c0c96623b24913f00.apk
+D:\malwares\android-malware-master\Android\Android\0be0a939037c373e6576f84d8a979800.apk
+D:\malwares\android-malware-master\Android\Android\0fab7e8605892bcc23abdbce09c6f8a3.apk
+D:\malwares\android-malware-master\Android\Android\0ff7368a21de052a0fd670ffdbbacdbe.apk
+D:\malwares\android-malware-master\Android\Android\294a6c52cc25a7ffad049814e558960a.apk
+D:\malwares\android-malware-master\Android\Android\4bf221a78836abfe9f30695f572a4f3a.apk
+D:\malwares\android-malware-master\Android\Android\5001f8b3e04173544a896b0bbc722ca7.apk
+D:\malwares\android-malware-master\Android\Android\f3c57db964d450c0d3e68243593e1b55.apk
+D:\malwares\android-malware-master\android-malware-master\braintest_or_ghostpush\do.jar
+D:\malwares\android-malware-master\android-malware-master\braintest_or_ghostpush\jhfrt.jar
+D:\malwares\android-malware-master\android-malware-master\BreakBottleneck\SamplesOfHIP2014TalkBreakBottleneck\XTaoAd.A\XTaoAd.A.dropped\32_DD46DB69096B55D120AAFC920220A1DD.jar
+D:\malwares\android-malware-master\android-malware-master\BreakBottleneck\SamplesOfHIP2014TalkBreakBottleneck\XTaoAd.A\XTaoAd.A.dropped\7001_779AC36160AB1285CF136321FB62D37B.jar
+D:\malwares\android-malware-master\android-malware-master\BreakBottleneck\SamplesOfHIP2014TalkBreakBottleneck\XTaoAd.A\XTaoAd.A.dropped\companydown_20130709.jar
+D:\malwares\android-malware-master\android-malware-master\BreakBottleneck\SamplesOfHIP2014TalkBreakBottleneck\XTaoAd.A\XTaoAd.A.dropped\launcher.apk
+D:\malwares\android-malware-master\android-malware-master\feabme\com.tinker.gameone(Cowboy Adventure).apk
+D:\malwares\android-malware-master\android-malware-master\feabme\com.tinker.jumperchess(Jump Chess).apk
+D:\malwares\android-malware-master\android-malware-master\jssmsers\com.recipesmart.apk
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\0038f450d7f1df75bf5890cf22299b0c99cc0bea8d66e6d25528cb01992a436b
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\0d8bf3cf5b58d9ba280f093430259538b6340b24e805058f3d85381d215ca778
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\1cb5a37bd866e92b993ecbbcc4a2478c717eeb93839049ef0953b0c6ba89434e
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\217eee3a83f33b658fb03fddfadd0e2eb34781d5dd243203da21f6cb335ef1b4
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\3032bb3d90eea6de2ba58ac7ceddead702cc3aeca7792b27508e540f0d1a60be
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\39c6bab80cc157bfe540bdee9ce2440b3b363e830bc7adaab9fc37075fb26fb1
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\3d99f490802f767201e8d507def4360319ce12ddf46765ca1b1168d64041f20f
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\92ae2083a8495cc5b0a0a82f0bdeb53877170d2615ce93bd8081172af9e60f8f
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\b0f6d2fc8176356124e502426d7aa7448490556ef68a2f31a78f4dd8af9d1750
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\e4e97090e9fd6cc3d321cee5799efd1806b5d8a9dea7c4872044057eb1c486ff
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\e5656c1d96158ee7e1a94f08bca1213686a05266e37fb2efb5443b84250ea29d
+D:\malwares\Android-Malware-Samples-master\Android-Malware-Samples-master\Android Malware\Android Malware\f901fd1fc2ce079a18c619e1192b14dcc164c97da3286031ee542dabe0b4cd8c
+D:\malwares\drebin-0\2c5e656af90044cf5cc694519a42477cb18bd4b2722b1474cdead4a8748d3f70
+D:\malwares\drebin-1\53e926b4f667655fb646e38e98f0212b173bed91dd55bbbdb2438bbfee182d90
+D:\malwares\drebin-2\314faa0b78a4003f501849aa1f24ca58e592345b4471ea41ece25e816ebb8918
+D:\malwares\drebin-2\73ea2c63b1d8172fde1b09410cddd28f7e682b2fdba0507483279f81cf9285c4
+D:\malwares\drebin-2\94bb6ade1ef31c6c96b98c7d8fad1abbc794292730f4363ea3cd9204fc5c9dfd
+D:\malwares\drebin-3\678195be04f4966e60e11e9f6f89b87333ae89e814e9cff76cca5521bfd77f46
+D:\malwares\drebin-3\970382b7ae69ccb9f9bca335d478131730ea68d2047b637ff368e6b169a721fd
+D:\malwares\drebin-3\a457354dab4ee63e281e5f4e527e5e83cffea3391775966436c789dee36c257b
+D:\malwares\drebin-3\afc460d9d889935946c4a70be3130cbe0f5b4eafc248e3c69811e292ecc5e4f5
+D:\malwares\drebin-5\ec3f84b135f0357cd1c4f2e8b4cdc241e1b0ba3b12f43a73b6d777a923a44c02
+D:\malwares\drebin-5\f9cad7c0218f34015aaf37f29a51832e1c23038ada5fc49064227d2dfb7f1e43
+D:\apk\10023547_com.tencent.KiHan_u127_1.16.9.3.apk
+D:\apk\10023547_com.tencent.tmgp.mhzxsy_u111_1.2.6.apk
+D:\apk\95Live直播-最IN免费中文互动视频直播APP.apk
+D:\apk\Adobe Photoshop Express.apk
+D:\apk\Advanced Download Manager.apk
+D:\apk\air.com.paplusint.GhostsOfMemoriesFull.apk
+D:\apk\AirDroid - 传输共享文件&amp;无线管理手机.apk
+D:\apk\AppVPN - Unlimited Free VPN.apk
+D:\apk\Arrow Launcher - 微软安卓桌面.apk
+D:\apk\Atom VPN (100% 免费).apk
+D:\apk\B612 - 全球自拍达人的最时髦圣地.apk
+D:\apk\beanfun! App.apk
+D:\apk\Booking.com缤客 - 全球酒店预订.apk
+D:\apk\cmb.pb.apk
+D:\apk\com.android.hyol.mi.apk
+D:\apk\com.aonesoft.zws.android.mi.apk
+D:\apk\com.baidu.tieba_mini (1).apk
+D:\apk\com.baobaomian.huatangpro (1).apk
+D:\apk\com.bf.sgs.mi.apk
+D:\apk\com.bilibili.fgo.mi.apk
+D:\apk\com.blizzard.wtcg.hearthstone.apk
+D:\apk\com.boxfish.stu.apk
+D:\apk\com.brixd.wallpager (1).apk
+D:\apk\com.chorusworldwide.theroom2.gld.apk
+D:\apk\com.coffeestainstudios.goatsimulator.elm.apk
+D:\apk\com.crimecity.one.apk
+D:\apk\com.crisisfire.android.mi.apk
+D:\apk\com.ddianle.lovedance.mi.apk
+D:\apk\com.disney.wheresmywater2_goo.gld.apk
+D:\apk\com.dw.fs.mi.apk
+D:\apk\com.ea.game.pvz2_row.apk
+D:\apk\com.ea.games.r3_row.apk
+D:\apk\com.ea.games.simsfreeplay_row.apk
+D:\apk\com.EastFantasy.EastWW.mi.apk
+D:\apk\com.eusoft.ting.en (1).apk
+D:\apk\com.forgame.meitu.mmxd.mi.apk
+D:\apk\com.GF.PalaceM2_cn_cn.hwy_android_xiaomi.mi.apk
+D:\apk\com.ggeye.babymingzi (1).apk
+D:\apk\com.ggeye.babymingzi.apk
+D:\apk\com.halfbrick.fruitninja.elm (1).apk
+D:\apk\com.hcg.cok.mi.apk
+D:\apk\com.hg.lyft.mi.apk
+D:\apk\com.honeymoon.stone.jean.poweredit (1).apk
+D:\apk\com.hsqj.mi.apk
+D:\apk\com.hxjy.union.mi.apk
+D:\apk\com.iflytek.speechcloud (1).apk
+D:\apk\com.ikoalabear.x5ol.mi.apk
+D:\apk\com.ikoalabear.x5ol2.mi.apk
+D:\apk\com.ilink.yaoshenzhuan.mi.apk
+D:\apk\com.invictus.impossiball (1).apk
+D:\apk\com.ipeaksoft.life11.mi (1).apk
+D:\apk\com.istorm.kdygcz.mi.apk
+D:\apk\com.izaodao.gps (1).apk
+D:\apk\com.Janlr.superwings.mi.apk
+D:\apk\com.jason.kof98.apk
+D:\apk\com.jedigames.p16.mi.apk
+D:\apk\com.jesson.meishi (1).apk
+D:\apk\com.jhgfvbhji.vghrfgbn.apk
+D:\apk\com.jiangchangcai.caipu.apk
+D:\apk\com.jiliguala.niuwa.apk
+D:\apk\com.jingdong.app.mall.apk
+D:\apk\com.joym.ultraman.wali (1).apk
+D:\apk\com.kk.poem (1).apk
+D:\apk\com.kongregate.mobile.pocketplants.google.elm.apk
+D:\apk\com.ksytech.weixinduokaishenqi.apk
+D:\apk\com.kunpo.baba91.apk
+D:\apk\com.kylin.khan.mi.apk
+D:\apk\com.lego.city.my_city2.apk
+D:\apk\com.lego.ninjago.toe.elm.apk
+D:\apk\com.m37.yhjyj.mi.apk
+D:\apk\com.mac.transformtwo.apk
+D:\apk\com.mac.xraytransform.apk
+D:\apk\com.maimemo.android.momo.apk
+D:\apk\com.makabaka.hellrider2.kyx.m.apk
+D:\apk\com.map.worldrobot.apk
+D:\apk\com.mars.fktzdzjtcl.mi.apk
+D:\apk\com.maxgames.stickwarlegacy.apk
+D:\apk\com.mayi.android.shortrent.apk
+D:\apk\com.melesta.coffeeshop.apk
+D:\apk\com.mengmi.majiang.mi.apk
+D:\apk\com.metek.ultraman.mi.apk
+D:\apk\com.mgc.ropehero2.apk
+D:\apk\com.mgc.stickman.rope.hero.two.apk
+D:\apk\com.mgc.stickmanrope.apk
+D:\apk\com.miHoYo.bh3.mi.apk
+D:\apk\com.mobimtech.natives.ivp (1).apk
+D:\apk\com.mogujie.apk
+D:\apk\com.mojang.minecraftpe.apk
+D:\apk\com.mojang.minecraftpe.elm.apk
+D:\apk\com.mojang.minecraftpe.gld.apk
+D:\apk\com.mojang.minecraftpe.pk.apk
+D:\apk\com.monster.pix.mipro.apk
+D:\apk\com.mosheng.apk
+D:\apk\com.mttt.rope.apk
+D:\apk\com.mtvn.tmntpp.gld.apk
+D:\apk\com.nd.android.pandareader.apk.crdownload
+D:\apk\com.nd.he.mi.apk
+D:\apk\com.netease.DFW.mi.apk
+D:\apk\com.netease.dhxy.mi.apk
+D:\apk\com.netease.gmdl.mi.apk
+D:\apk\com.netease.l10.mi.apk
+D:\apk\com.netease.ldxy.mi.apk
+D:\apk\com.netease.my.mi.apk
+D:\apk\com.netease.onmyoji.mi.apk
+D:\apk\com.netease.stzb.mi.apk
+D:\apk\com.netease.tank.mi.apk
+D:\apk\com.netease.tx.mi.apk
+D:\apk\com.netease.vopen.apk
+D:\apk\com.netease.zmq.mi.apk
+D:\apk\com.niwodai.universityloan.apk
+D:\apk\com.noodlecake.anothercasesolved.apk
+D:\apk\com.nostop.eighthnote.elm.apk
+D:\apk\com.OppanaGames.CarSim.m.apk
+D:\apk\com.oray.sunlogin.apk
+D:\apk\com.orbital.brainiton.apk
+D:\apk\com.outfit7.mytalkingangelafree.apk
+D:\apk\com.ovilex.drivingschool2016.apk
+D:\apk\com.ovilex.eurotruckdriver.apk
+D:\apk\com.pape.nuannew.cm.mitalk.apk
+D:\apk\com.patiya.a2048jsb (1).apk
+D:\apk\com.pipaw.browser.apk
+D:\apk\com.pk51.snk.kof97.ext.mi.apk
+D:\apk\com.pk51.snk.kof97hd.mi (1).apk
+D:\apk\com.pk51.snk.kof97hd.mi.apk
+D:\apk\com.playrix.township.chukong.mi.apk
+D:\apk\com.pocketmon.mi.apk
+D:\apk\com.popcap.pvz2cthdxm.apk
+D:\apk\com.popcap.pvz2xm.apk
+D:\apk\com.pvzcard.pvzsuper.mi.apk
+D:\apk\com.qb.qtranslator.apk
+D:\apk\com.qianhuan.ttmwy.mi.apk
+D:\apk\com.qmqj.tianmashikong.mi.apk
+D:\apk\com.qqgame.mic.apk
+D:\apk\com.quark.browser (1).apk
+D:\apk\com.qzyx.union.mi.apk
+D:\apk\com.radical.huangshangjixiang.mi.apk
+D:\apk\com.rovio.angrybirdstransformers.mi.apk
+D:\apk\com.seebaby.apk
+D:\apk\com.sesame.zgjjgame2.mi.apk
+D:\apk\com.shandagames.falloutshelter.mi.apk
+D:\apk\com.shixuegongsha.mi.apk
+D:\apk\com.shouhui.xjsyj.apk
+D:\apk\com.sincetimes.dragonfarmii.mi.apk
+D:\apk\com.sinyee.babybus.downbound.apk
+D:\apk\com.sinyee.babybus.homeland.apk
+D:\apk\com.sinyee.babybus.number (1).apk
+D:\apk\com.skymoons.seer.mi.apk
+D:\apk\com.softstar.Richman360.apk
+D:\apk\com.softstar.stardom.mi.apk
+D:\apk\com.stemu.psp.atmgdjh.apk
+D:\apk\com.stickman.ropehero2.apk
+D:\apk\com.supercell.clashroyale.mi.apk
+D:\apk\com.supercell.hayday.apk
+D:\apk\com.superevilmegacorp.game.apk
+D:\apk\com.taobao.taobao.apk
+D:\apk\com.teaandcakegames.yandere.st.elm.apk
+D:\apk\com.telltalegames.minecraft100.apk
+D:\apk\com.tencent.androidqqmail.apk
+D:\apk\com.tencent.clover.apk
+D:\apk\com.tencent.feiji.apk
+D:\apk\com.tencent.freestyle.apk
+D:\apk\com.tencent.game.SSGame.apk
+D:\apk\com.tencent.hexkog.apk
+D:\apk\com.tencent.pao.apk
+D:\apk\com.tencent.peng.apk
+D:\apk\com.tencent.Qfarm.apk
+D:\apk\com.tencent.tmgp.carrot3.apk
+D:\apk\com.tencent.tmgp.cf.apk
+D:\apk\com.tencent.tmgp.dragonnest.apk
+D:\apk\com.tencent.tmgp.jxqy.apk
+D:\apk\com.tencent.tmgp.kof98.apk
+D:\apk\com.tencent.tmgp.palol.apk
+D:\apk\com.tencent.tmgp.qjnn.apk
+D:\apk\com.tencent.tmgp.RunGame.apk
+D:\apk\com.tencent.WeFire.apk
+D:\apk\com.tencent.weread.apk
+D:\apk\com.thevoxelagents.tc3.gld.apk
+D:\apk\com.tiancity.mpopkart.mi.apk
+D:\apk\com.tiange.hz.happy88.apk
+D:\apk\com.tq.warandorder.mi.apk
+D:\apk\com.triadastudio.shadowmatic.elm.apk
+D:\apk\com.ttx5.mi.apk
+D:\apk\com.ty.fishing.mi.apk
+D:\apk\com.u17.comic.phone.apk
+D:\apk\com.u776.poke.android.mi.apk
+D:\apk\com.ustwo.monumentvalleyzz.apk
+D:\apk\com.vectorunit.redcmgeplaycn.mi.apk
+D:\apk\com.videogo.apk
+D:\apk\com.wali.jianxiashijie3D.mi.apk
+D:\apk\com.wanmei.zhuxian.mi.apk
+D:\apk\com.wdsgame.loli.mi.apk
+D:\apk\com.wooduan.ssjj.mi.apk
+D:\apk\com.wyd.hero.dandandao.mi (1).apk
+D:\apk\com.wyd.hero.dandandao.mi.apk
+D:\apk\com.wyd.hero.yqlfc.cb1.mi.apk
+D:\apk\com.xcqy.mi.apk
+D:\apk\com.xf.lcby.hede.mi.apk
+D:\apk\com.xiachufang (1).apk
+D:\apk\com.xianyugame.sbsg.mi.apk
+D:\apk\com.xiaoxi.zzxbbmt.mi.apk
+D:\apk\com.xiaoxian.chengyu.three.android.apk
+D:\apk\com.xx.ddz.liuy.apk
+D:\apk\com.yaowan.dfh3.mi.apk
+D:\apk\com.yeahworld.yeahandroid58.mi.apk
+D:\apk\com.yingzheng.jlkt3.mi.apk
+D:\apk\com.yinhan.huancheng.mi.apk
+D:\apk\com.yinhan.hunter.mi.apk
+D:\apk\com.yinhan.hunter.yh.apk
+D:\apk\com.yinhan.skzh.mi.apk
+D:\apk\com.yodo1.rodeo.mi.apk
+D:\apk\com.yodo1.SkiSafari.XIAOMI_01.apk
+D:\apk\com.yodo1.skisafari2moon.mi.apk
+D:\apk\com.yodo1.sniper3d.mi.apk
+D:\apk\com.youdao.translator.apk
+D:\apk\com.youku.phone.apk
+D:\apk\com.youku.vr.lite.apk
+D:\apk\com.youzu.snxyj.mi.apk
+D:\apk\com.yuecai.mochouhua.apk
+D:\apk\com.yunchang.buliangren.mi.apk
+D:\apk\com.zlongame.qqh.mi.apk
+D:\apk\com.zlongame.yjqy.mi.apk
+D:\apk\com.zmxyol.union.mi.apk
+D:\apk\com.zonmob.StickmanRevenge.gld.apk
+D:\apk\com.zoxun.match.guangdmj.mi.apk
+D:\apk\com.ztgame.jl.mi.apk
+D:\apk\com.zuibon.zuibangai.apk
+D:\apk\com.zxd.moxiu.live.apk
+D:\apk\ctrip.android.view.apk
+D:\apk\danji.motuo.uu (1).apk
+D:\apk\danji.xiadao.uu.apk
+D:\apk\dev.quabug.jhz.lovelotus.kyx.m.apk
+D:\apk\dtwssy_netease_netease.mj2925_domob_cpc2_dev_1.0.4.apk
+D:\apk\ewrfs.hgdzf.sef (1).apk
+D:\apk\Facebook Lite.apk
+D:\apk\fsrkyffFPQnlQ5FpUbOyHZrkGbkz0Hh2Nk99ES1VcBLntd5xnYziCSB_HGLGRRZA0.apk
+D:\apk\gdrg.iuh.uyjghf.apk
+D:\apk\ge.shenzi.game.apk
+D:\apk\Google Play Store.apk
+D:\apk\Google Play 电影.apk
+D:\apk\Google 云端硬盘.apk
+D:\apk\Google 文字转语音.apk
+D:\apk\Google幻灯片.apk
+D:\apk\HTC 天气.apk
+D:\apk\Huawei HiLink (Mobile WiFi).apk
+D:\apk\im.xingzhe.apk
+D:\apk\im.yixin.apk
+D:\apk\io.voodoo.paperio.elm.apk
+D:\apk\IP Tools? Network utilities.apk
+D:\apk\jiakaokesi.app.good.apk
+D:\apk\jiakaokeyi.app.good.apk
+D:\apk\jinianbeigu.yiwang.haitan.mi.apk
+D:\apk\jrapp_xingmai4.apk
+D:\apk\JW Library.apk
+D:\apk\KakaoTalk? Free Calls &amp; Text.apk
+D:\apk\Keep - 移动健身教练.apk
+D:\apk\kevinj.photoeffects.apk
+D:\apk\KKTV – 難以抗劇.apk
+D:\apk\LeSports HK.apk
+D:\apk\lie.ren.game.apk
+D:\apk\LINE.apk
+D:\apk\me.zhuque.moba.mi.apk
+D:\apk\Messenger.apk
+D:\apk\metrogame.huntercraft.apk
+D:\apk\Microsoft OneDrive.apk
+D:\apk\Microsoft Word.apk
+D:\apk\Mobage（モバゲー）.apk
+D:\apk\mobi.abcmouse.xiaomi.china.apk
+D:\apk\my.beautyCamera.apk
+D:\apk\myTV SUPER.apk
+D:\apk\net.crimoon.pm.mi.apk
+D:\apk\net.HypercraftSarl.PC.apk
+D:\apk\net.iaround.apk
+D:\apk\net.lee.pop (1).apk
+D:\apk\net.mobigame.zombietsunami.apk
+D:\apk\net.SandStormEarl.CC3.apk
+D:\apk\net.SandStormEarl.DB.apk
+D:\apk\Nova Launcher.apk
+D:\apk\np.idreamsky.horizonchase.mi.apk
+D:\apk\OfficeSuite + PDF Editor.apk
+D:\apk\oms.mmc.app.almanac_inland.apk
+D:\apk\onyuan.cchess.mi.apk
+D:\apk\onyuan.weiqi2.mi.apk
+D:\apk\OpenVPN Connect.apk
+D:\apk\Opera Mini web 浏览器.apk
+D:\apk\org.cocos2d.fishingjoy2016.mi.apk
+D:\apk\org.fungo.a8sport.apk
+D:\apk\org.fungo.fungolive.apk
+D:\apk\org.fungo.fungoliveallstar.apk
+D:\apk\org.funship.findsomething2.mi.apk
+D:\apk\Photo Grid -相片组合.apk
+D:\apk\pinkdiary.xiaoxiaotu.com.apk
+D:\apk\pixiv.apk
+D:\apk\pl.idreams.pottery.mi.apk
+D:\apk\Power Clean - 清理垃圾、加速手機、最佳化系统.apk
+D:\apk\QQ轻聊版.apk
+D:\apk\QQ音乐.apk
+D:\apk\RAR.apk
+D:\apk\Reddit? The Official App.apk
+D:\apk\Root所有设备.apk
+D:\apk\se.illusionlabs.skate2.gld.apk
+D:\apk\Skype.apk
+D:\apk\Smooth新浪微博客户端.apk
+D:\apk\smtc.haibo.apk.apk
+D:\apk\Snapseed.apk
+D:\apk\sogou.mobile.explorer.apk
+D:\apk\Solid Explorer File Manager.apk
+D:\apk\Spotify Music.apk
+D:\apk\tuhu5.apk
+D:\apk\TumbSave for Tumblr.apk
+D:\apk\Turbo VPN – Unlimited Free VPN.apk
+D:\apk\uc_game_2.0.6_8335397_190504d6a454.apk
+D:\apk\UC浏览器 - 飞速上网 极速下载.apk
+D:\apk\UC浏览器.apk
+D:\apk\Vidmate -HD Video Downloader &amp; Live TV.apk
+D:\apk\vStudio.Android.Camera360.apk
+D:\apk\wangzherongyao.apk
+D:\apk\WhatsApp Messenger.apk
+D:\apk\whxgf.uijygh.serdgfh.apk
+D:\apk\Wifi 分析仪（Wifi Analyzer）.apk
+D:\apk\WiFi万能钥匙 - wifi.com官方版本.apk
+D:\apk\wm021.signed.apk
+D:\apk\Yoga Free VPN (Unlimited).apk
+D:\apk\Your Breast.apk
+D:\apk\YouTube.apk
+D:\apk\yxlm.danji.uu.apk
+D:\apk\Zalo.apk
+D:\apk\主題大師.apk
+D:\apk\八達通.apk
+D:\apk\千尋遙控器-電視助手（機頂盒遙控器 ,盒子遙控器,遙控精靈）.apk
+D:\apk\华闻头条－翻墙必看热点新闻，大陆政治军事消息，今日头条海外版.apk
+D:\apk\印象笔记(Evernote).apk
+D:\apk\地图.apk
+D:\apk\多邻国｜免费学英语.apk
+D:\apk\微信.apk
+D:\apk\微信读书.apk
+D:\apk\微博.apk
+D:\apk\愛動漫 - iComic.apk
+D:\apk\愛奇藝(平板專用)－電視劇電影綜藝動漫影音線上看.apk
+D:\apk\我就是要換主題.apk
+D:\apk\扫描全能王 -- CamScanner.apk
+D:\apk\支付宝.apk
+D:\apk\方塊俠創世神聯機.apk
+D:\apk\无尽争霸_舒卷科技_1.33.1.1_33-2_20170113_P32577A.apk
+D:\apk\极速免费 翻墙神器 - Hotspot Shield VPN.apk
+D:\apk\極樂速攝.apk
+D:\apk\浏览器.apk
+D:\apk\浪Live - 去興風 去作浪 美顏最好的直播平臺.apk
+D:\apk\淘宝.apk
+D:\apk\漫里X.apk
+D:\apk\线上夹娃娃机「抓乐霸」.apk
+D:\apk\网易云音乐.apk
+D:\apk\网易邮箱大师 - 支持QQ邮箱、Gmail等.apk
+D:\apk\老虎翻墙VPN免费版.apk
+D:\apk\自由门VPN - 翻墙软件.apk
+D:\apk\蓝灯? 秒杀VPN.apk
+D:\apk\蝦皮拍賣.apk
+D:\apk\谷歌拼音输入法.apk
+D:\apk\豆瓣.apk
+D:\apk\迷小說 - 免費小說閱讀器.apk
+D:\apk\酷狗音乐.apk
