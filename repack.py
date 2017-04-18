@@ -1,6 +1,9 @@
 # coding=UTF-8
 import APKManager
 import os
+import platform
+
+
 # import ssdeep
 
 # 模糊hash算法的使用测试,此包还能直接比较两个hash的相似度
@@ -26,3 +29,24 @@ import os
 # # python执行cmd获取apk签名
 # p = os.popen('java -cp /Applications/signapk/wandoujia-tools.jar com.wandoujia.tools.ApkSignatureToolsMain /Users/sundiz/Desktop/new_uc.apk')
 # print p.readlines()[0].replace('\n', '')
+
+# def compare_fuzzy_hash(apk_raw_data1, apk_raw_data2):
+#     hash1 = ssdeep.hash(apk_raw_data1)
+#     hash2 = ssdeep.hash(apk_raw_data2)
+#     cmphash = ssdeep.compare(hash1, hash2)
+#     return cmphash
+
+def compare_signature(apk_file1, apk_file2):
+    if 'Windows' in platform.system():
+        signaturetool = r'java -cp D:\SignatureTool\wandoujia-tools.jar com.wandoujia.tools.ApkSignatureToolsMain '
+    else:
+        signaturetool = 'java -cp /Applications/signapk/wandoujia-tools.jar com.wandoujia.tools.ApkSignatureToolsMain '
+    p1 = os.popen(signaturetool + apk_file1)
+    p2 = os.popen(signaturetool + apk_file2)
+    signature1 = p1.readlines()[0].strip()
+    signature2 = p2.readlines()[0].strip()
+    return signature1 == signature2
+
+
+def check_repack(apk_file1, apk_file2):
+    pass

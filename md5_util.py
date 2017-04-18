@@ -4,7 +4,7 @@
 
 import hashlib
 import os, sys
-from APKManager import APKManager
+import APKManager
 
 
 # 简单的测试一个字符串的MD5值
@@ -48,11 +48,25 @@ def CalcMD5(filepath):
         return hash
 
 
-if __name__ == "__main__":
-    path = r'C:\Users\dizsun\Desktop\app\com.tencent.tmgp.sgame.apk'
-    # print GetFileMd5(path),len(GetFileMd5(path))
-    # print APKManager(path).get_apk_obj().get_package()
-    sys.stdout.write('hello')
-    sys.stdout.write('%\r')
-    sys.stdout.write('ghdfgud')
+def get_signature_and_md5(filepath):
+    try:
+        p = os.popen(r'java -cp "C:\Program Files\ApkSignatureToolJar\wandoujia-tools.jar" com.wandoujia.tools.ApkSignatureToolsMain ' + filepath)
+        s = p.readlines()
+        if s:
+            return s[0].strip().split('=')[1], s[1].strip().split('=')[1]
+        else:
+            print "get_signature_and_md5 error"
+            return None
+    except Exception:
+        return None
 
+
+if __name__ == "__main__":
+    path = r'D:\apk\10023547_com.tencent.tmgp.mhzxsy_u111_1.2.6.apk'
+    # print GetFileMd5(path)
+    # print APKManager(path).get_apk_obj().get_package()
+    # malwares_path = r"D:\malwares"
+    # for p in APKManager.get_all_apk_files(malwares_path):
+    #     print GetFileMd5(p)
+
+    print get_signature_and_md5(path)

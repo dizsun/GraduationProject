@@ -66,7 +66,7 @@ if __name__ == '__main__':
     #     androguard_obj = get_androguard_obj(apkfile)
     #     mal_API_count = check_apk_mal_methods(androguard_obj, mal_methods)
     #     print apkfile + '::' + mal_API_count
-    a1, d1, x1 = get_androguard_obj(apk_path)
+    # a1, d1, x1 = get_androguard_obj(apk_path)
     # mal_methods_file = open(mal_methods_path)
     # mal_methods = mal_methods_file.readlines()
     # 获取应用调用的所有方法
@@ -87,8 +87,8 @@ if __name__ == '__main__':
     # print len(permissions)
 
 
-    public_pkgs = ('Lorg/apache', 'Landroid', 'Ljava', 'Landroid/support', 'Lnet', 'Lnu/',
-                   'Lorg/codehaus/groovy/', 'Lgroovy', 'Ljunit', 'Lorg', '[')
+    # public_pkgs = ('Lorg/apache', 'Landroid', 'Ljava', 'Landroid/support', 'Lnet', 'Lnu/',
+    #                'Lorg/codehaus/groovy/', 'Lgroovy', 'Ljunit', 'Lorg', '[')
     # pkgs = x1.get_tainted_packages()
     # for pkg in pkgs.get_packages():
     #     is_public = False
@@ -99,6 +99,11 @@ if __name__ == '__main__':
     #         # print pkg[1]
     #         print d1.get_class(re.sub(';', '', pkg[1]))
 
-    class_list = d1.get_classes()
-    class_item = class_list[10]
-    print class_item.get_name()
+    # class_list = d1.get_classes()
+    # class_item = class_list[10]
+    # print class_item.get_name()
+
+    f=open('data2.txt')
+    l = f.readline()
+    ls = l.split(',')
+    print len(ls)

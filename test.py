@@ -16,7 +16,7 @@ cur = conn.cursor()
 
 
 # 插入一条数据
-# cur.execute("insert into apk_raw_info(apk_md5,apk_name) values('0ecc4a740c016b413d9cccc784fa9f3b','test')")
+cur.execute("insert into apk_raw_info(apk_md5,apk_sign_md5,apk_name,apk_package_name,apk_methods,apk_permissions,apk_flag) values('123',NULL,NULL,NULL,NULL,NULL,NULL)")
 # 插入一条数据
 # sqli="insert into apk_raw_info(%s,%s,%s,%s,%s,%s,%s)"
 # cur.execute(sqli,('3','Huhu','2 year 1 class','7'))
