@@ -184,6 +184,21 @@ def search_best_gate():
     return glist, blist
 
 
+def check_jaccard_coefficent(apk_obj1, apk_obj2):
+    """
+    获取两个apk文件的Jaccard相似系数
+    """
+    list1 = []
+    list2 = []
+    for per in apk_obj1.get_permissions():
+        list1.append(per)
+    for per in apk_obj2.get_permissions():
+        list2.append(per)
+    if len(set(list1 + list2)) != 0:
+        jaccard = len(set(list1).intersection(set(list2))) / (len(set(list1 + list2)) + 0.0)
+    return jaccard
+
+
 if __name__ == '__main__':
     """gate=1.6"""
     apkfile = r'D:\apk\aolei.flcp.apk'
