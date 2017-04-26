@@ -62,7 +62,7 @@ def get_signature_and_md5(filepath):
 
 
 if __name__ == "__main__":
-    path = r'D:\apk\10023547_com.tencent.tmgp.mhzxsy_u111_1.2.6.apk'
+    path = r'D:\apk\LINE.apk'
     # print GetFileMd5(path)
     # print APKManager(path).get_apk_obj().get_package()
     # malwares_path = r"D:\malwares"

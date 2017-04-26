@@ -39,13 +39,21 @@ class SQLUtil:
         """检测数据库中是否有重复的apk,若有则返回True,否则返回False,若查询错误也返回False"""
         if not apk_md5:
             return
-        sqli = "select * from apk_raw_info where apk_md5='" + str(apk_md5) + "'"
+        sqli = "select apk_md5 from apk_raw_info where apk_md5='" + str(apk_md5) + "'"
         duplicate_count = self.execute(sqli)
-        if duplicate_count:
-            if duplicate_count > 0:
-                return True
-            else:
-                return False
+        if duplicate_count and duplicate_count > 0:
+            return True
+        else:
+            return False
+
+    def is_duplicate_apk_sign_md5(self, apk_sign_md5, apk_md5):
+        """检测数据库中是否有重复的apk,若有则返回True,否则返回False,若查询错误也返回False"""
+        if not apk_sign_md5:
+            return
+        sqli = "select apk_md5 from apk_raw_info where apk_sign_md5='" + str(apk_sign_md5) + "' and apk_md5='" + str(apk_md5) + "'"
+        duplicate_count = self.execute(sqli)
+        if duplicate_count and duplicate_count > 0:
+            return True
         else:
             return False
 
@@ -276,6 +284,46 @@ class SQLUtil:
         conn.commit()
         conn.close()
         return apps
+
+    def search_apk_raw_info_md5_with_flag(self, flag,top=500):
+        conn = MySQLdb.connect(
+            host='localhost',
+            port=3306,
+            user='root',
+            passwd='root',
+            db='test',
+        )
+        cur = conn.cursor()
+        sqli = "select apk_md5,apk_name from apk_raw_info where apk_flag=%d limit 0,%d" % (int(flag),top)
+        cur.execute(sqli)
+        apps = []
+        for i in range(0, top):
+            data = cur.fetchone()
+            app = APP()
+            app.apk_md5 = data[0]
+            app.apk_name = base64.b64decode(data[1])
+            apps.append(app)
+        cur.close()
+        conn.commit()
+        conn.close()
+        return apps
+
+    def search_apk_raw_info_flag(self, apk_md5):
+        conn = MySQLdb.connect(
+            host='localhost',
+            port=3306,
+            user='root',
+            passwd='root',
+            db='test',
+        )
+        cur = conn.cursor()
+        sqli = "select apk_flag from apk_raw_info where apk_md5='%s'" % str(apk_md5)
+        cur.execute(sqli)
+        flag = cur.fetchone()[0]
+        cur.close()
+        conn.commit()
+        conn.close()
+        return flag
 
     def search_apk_method(self, apk_md5=None, apk_method=None, citations=None, top=0):
         pass
@@ -640,57 +688,59 @@ if __name__ == '__main__':
     # print su.get_count(apk_flag='0')
 
     # <editor-fold desc="制作机器学习数据表">
-    permission_list = []
-    f = open('top_permissions.txt', 'r')
-    for apk_permission in f.readlines():
-        permission_list.append(apk_permission.strip())
-    f.close()
-    f = open('apk_md5s.txt', 'r')
-    apk_md5s = [m.strip() for m in f.readlines()]
-    f.close()
-    total = len(apk_md5s)
-    count = 0
-    for apk_md5 in apk_md5s:
-        # 获取flag
-        conn = MySQLdb.connect(
-            host='localhost',
-            port=3306,
-            user='root',
-            passwd='root',
-            db='test',
-        )
-        cur = conn.cursor()
-        sqli = "select apk_flag from apk_raw_info where apk_md5='%s'" % apk_md5
-        cur.execute(sqli)
-        flag = cur.fetchone()
-        flag = flag[0] if flag else 0
-        cur.close()
-        conn.commit()
-        conn.close()
-        # 获取各个permission的存在情况
-        conn = MySQLdb.connect(
-            host='localhost',
-            port=3306,
-            user='root',
-            passwd='root',
-            db='test',
-        )
-        cur = conn.cursor()
-        sqli = "select apk_permission from apk_permission where apk_md5='%s'" % apk_md5
-        cur.execute(sqli)
-        permissions = cur.fetchall()
-        permissions = [] if not permissions else [base64.b64decode(p[0]) for p in permissions]
-        cur.close()
-        conn.commit()
-        conn.close()
-        for permission in permission_list:
-            if permission in permissions:
-                f_write('data.txt', '1 ')
-            else:
-                f_write('data.txt', '0 ')
-        f_write('data.txt', str(flag))
-        f_write('data.txt', '\n')
-        count += 1
-        rate = count / (total + 0.0)
-        sys.stdout.write("\r已完成:" + str(count) + "||" + str(rate * 100) + "%")
-        # </editor-fold>
+    # permission_list = []
+    # f = open('top_permissions.txt', 'r')
+    # for apk_permission in f.readlines():
+    #     permission_list.append(apk_permission.strip())
+    # f.close()
+    # f = open('apk_md5s.txt', 'r')
+    # apk_md5s = [m.strip() for m in f.readlines()]
+    # f.close()
+    # total = len(apk_md5s)
+    # count = 0
+    # for apk_md5 in apk_md5s:
+    #     # 获取flag
+    #     conn = MySQLdb.connect(
+    #         host='localhost',
+    #         port=3306,
+    #         user='root',
+    #         passwd='root',
+    #         db='test',
+    #     )
+    #     cur = conn.cursor()
+    #     sqli = "select apk_flag from apk_raw_info where apk_md5='%s'" % apk_md5
+    #     cur.execute(sqli)
+    #     flag = cur.fetchone()
+    #     flag = flag[0] if flag else 0
+    #     cur.close()
+    #     conn.commit()
+    #     conn.close()
+    #     # 获取各个permission的存在情况
+    #     conn = MySQLdb.connect(
+    #         host='localhost',
+    #         port=3306,
+    #         user='root',
+    #         passwd='root',
+    #         db='test',
+    #     )
+    #     cur = conn.cursor()
+    #     sqli = "select apk_permission from apk_permission where apk_md5='%s'" % apk_md5
+    #     cur.execute(sqli)
+    #     permissions = cur.fetchall()
+    #     permissions = [] if not permissions else [base64.b64decode(p[0]) for p in permissions]
+    #     cur.close()
+    #     conn.commit()
+    #     conn.close()
+    #     for permission in permission_list:
+    #         if permission in permissions:
+    #             f_write('data.txt', '1 ')
+    #         else:
+    #             f_write('data.txt', '0 ')
+    #     f_write('data.txt', str(flag))
+    #     f_write('data.txt', '\n')
+    #     count += 1
+    #     rate = count / (total + 0.0)
+    #     sys.stdout.write("\r已完成:" + str(count) + "||" + str(rate * 100) + "%")
+    # </editor-fold>
+
+    print base64.b64decode('RDpcbWFsd2FyZXNcZHJlYmluLTFcNjBlMWNmMjhiYmE4MzVhY2IxNjZmMDJiMTRmODAyNmVmMmMxYWMwZmI4NzI0NGM5YzVlNmFiZDMwNmM2NDlmZQ==')

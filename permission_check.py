@@ -135,7 +135,7 @@ def get_coef():
         return None
 
 
-def check_sensitive_permissions(apk_file=None, apk_data=None, alpha=100000, gate=1.6):
+def check_sensitive_permissions(apk_file=None, apk_data=None, alpha=1, gate=1.6):
     """
     敏感权限检测
     @:param gete 门限值

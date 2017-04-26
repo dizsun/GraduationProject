@@ -3,20 +3,20 @@ import base64
 import MySQLdb
 from APKManager import APKManager
 
-path = r'C:\Users\dizsun\Desktop\app\com.tencent.tmgp.sgame.apk'
-apkmanager = APKManager(path)
-conn = MySQLdb.connect(
-    host='localhost',
-    port=3306,
-    user='root',
-    passwd='root',
-    db='test',
-)
-cur = conn.cursor()
+# path = r'C:\Users\dizsun\Desktop\app\com.tencent.tmgp.sgame.apk'
+# apkmanager = APKManager(path)
+# conn = MySQLdb.connect(
+#     host='localhost',
+#     port=3306,
+#     user='root',
+#     passwd='root',
+#     db='test',
+# )
+# cur = conn.cursor()
 
 
 # 插入一条数据
-cur.execute("insert into apk_raw_info(apk_md5,apk_sign_md5,apk_name,apk_package_name,apk_methods,apk_permissions,apk_flag) values('123',NULL,NULL,NULL,NULL,NULL,NULL)")
+# cur.execute("insert into apk_raw_info(apk_md5,apk_sign_md5,apk_name,apk_package_name,apk_methods,apk_permissions,apk_flag) values('123',NULL,NULL,NULL,NULL,NULL,NULL)")
 # 插入一条数据
 # sqli="insert into apk_raw_info(%s,%s,%s,%s,%s,%s,%s)"
 # cur.execute(sqli,('3','Huhu','2 year 1 class','7'))
@@ -58,12 +58,19 @@ cur.execute("insert into apk_raw_info(apk_md5,apk_sign_md5,apk_name,apk_package_
 # info = cur.fetchmany(aa)
 # for ii in info:
 #     print ii[0], ii[2]
-    # if ii[4]:
-    #     ms = base64.b64decode(ii[4]).split('#')
-    #     ps = base64.b64decode(ii[5]).split('#')
+# if ii[4]:
+#     ms = base64.b64decode(ii[4]).split('#')
+#     ps = base64.b64decode(ii[5]).split('#')
 
 # print len(ps), len(ms)
 # print ps[0], ms[0], ps[1], ms[1]
-cur.close()
-conn.commit()
-conn.close()
+# cur.close()
+# conn.commit()
+# conn.close()
+
+f = open('regression_test')
+l = f.readline()
+f.close()
+f = open('regression_test', 'w')
+f.write(l.replace('gate', '\ngate'))
+f.close()
