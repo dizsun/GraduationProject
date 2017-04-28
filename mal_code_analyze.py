@@ -36,19 +36,21 @@ def get_mal_methods():
 
 def check_code(path, patterns):
     strings = APKManager.APKManager(path).get_dvm_obj().get_strings()
-    i=0
+    i = 0
+    strs=[]
     for string in strings:
         for pattern in patterns:
             if pattern.search(string):
-                i+=1
-    return i
+                strs.append(string)
+                i += 1
+    return i,strs
 
 
 def check_sensitive_code(path):
     regexs = [r'^1[358]\d{9}$|^147\d{8}',
               r'^(?:http|ftp)s?://'
               r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'
-              r'localhost|'
+              r'localhost.*?|'
               r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})']
     patterns = []
     for regex in regexs:
@@ -63,4 +65,9 @@ def check_sensitive_code(path):
 
 
 if __name__ == '__main__':
-    print check_sensitive_code('/Users/sundiz/Desktop/app-release.apk')
+    apkfile=r'D:\malwares\drebin-0\0a1aa1f3c881c8e8f6ea3a27fb6772c1cb21038e0bc134e702492d84d5d2646f'
+    apk_obj=APKManager.APKManager(apkfile).get_apk_obj()
+    print '应用名：',apk_obj.get_app_name()
+    print '包名：',apk_obj.get_package()
+    print '可疑url及号码：'
+    check_sensitive_code(apkfile)
