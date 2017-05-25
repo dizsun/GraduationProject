@@ -206,42 +206,54 @@ if __name__ == '__main__':
     data2 = 'data2.txt'
     # print check_sensitive_permissions(apkfile)
     # print check_sensitive_permissions(mal_apk)
-    f = open(data2)
-    datas = [l.strip().split(',') for l in f.readlines()]
-    f.close()
-    goodtotal = 0.0
-    goodcount = 0.0
-    badtotal = 0.0
-    badcount = 0.0
-    mmax = mmin = 0
-    goodmax = goodmin = 0
-    badmax = badmin = 0
-    goodt = badt = 0
-    gate = 1
-    for data in datas:
-        temp = check_sensitive_permissions(apk_data=data)
-        mmax = mmax if mmax > temp else temp
-        mmin = mmin if mmin < temp else temp
-        if data[105] == '0':
-            badtotal += temp
-            badcount += 1
-            if temp > gate: badt += 1
-            badmax = badmax if badmax > temp else temp
-            badmin = badmin if badmin < temp else temp
-        else:
-            goodtotal += temp
-            goodcount += 1
-            if temp < gate: goodt += 1
-            goodmax = goodmax if goodmax > temp else temp
-            goodmin = goodmin if goodmin < temp else temp
-    print '官方app均值：', goodtotal / goodcount, '最大值：', goodmax, '最小值：', goodmin
-    print '恶意app均值：', badtotal / badcount, '最大值：', badmax, '最小值：', badmin
-    print '最大值和最小值：', mmax, mmin
-    print '官方app误判比例：', goodt / goodcount
-    print '恶意app误判比例：', badt / badcount
+
+    # f = open(data2)
+    # datas = [l.strip().split(',') for l in f.readlines()]
+    # f.close()
+    # goodtotal = 0.0
+    # goodcount = 0.0
+    # badtotal = 0.0
+    # badcount = 0.0
+    # mmax = mmin = 0
+    # goodmax = goodmin = 0
+    # badmax = badmin = 0
+    # goodt = badt = 0
+    # gate = 1
+    # for data in datas:
+    #     temp = check_sensitive_permissions(apk_data=data)
+    #     mmax = mmax if mmax > temp else temp
+    #     mmin = mmin if mmin < temp else temp
+    #     if data[105] == '0':
+    #         badtotal += temp
+    #         badcount += 1
+    #         if temp > gate: badt += 1
+    #         badmax = badmax if badmax > temp else temp
+    #         badmin = badmin if badmin < temp else temp
+    #     else:
+    #         goodtotal += temp
+    #         goodcount += 1
+    #         if temp < gate: goodt += 1
+    #         goodmax = goodmax if goodmax > temp else temp
+    #         goodmin = goodmin if goodmin < temp else temp
+    # print '官方app均值：', goodtotal / goodcount, '最大值：', goodmax, '最小值：', goodmin
+    # print '恶意app均值：', badtotal / badcount, '最大值：', badmax, '最小值：', badmin
+    # print '最大值和最小值：', mmax, mmin
+    # print '官方app误判比例：', goodt / goodcount
+    # print '恶意app误判比例：', badt / badcount
+
     # 获取最佳gate值
     # g,b=search_best_gate()
     # ii=0
     # for i in range(-50,101):
     #     print i/10.0,':',g[ii],':',b[ii]
     #     ii+=1
+
+    f = open("permissions.txt")
+    rlines = f.readlines()
+    f.close()
+    lines = [l.strip() for l in rlines]
+    f = open("java.txt", 'a')
+    for line in lines:
+        paras = line.split(':')
+        f.write('preferencesEditor.putString("%s","%s");\n' % (paras[0], paras[1]))
+    f.close()
