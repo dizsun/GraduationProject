@@ -75,9 +75,14 @@ def test(apk_file):
     print '应用名：', apk_obj.get_app_name()
     print '包名：', apk_obj.get_package()
     print '可疑url及号码：'
-    check_sensitive_code(apk_file)
+    i, codes = check_sensitive_code(apk_file)
+    for code in codes:
+        print code
 
 
 if __name__ == '__main__':
-    apkfile = r'D:\malwares\drebin-0\0a1aa1f3c881c8e8f6ea3a27fb6772c1cb21038e0bc134e702492d84d5d2646f'
+    #恶意软件
+    apkfile = r'/Users/sundiz/Desktop/malware/6f11b19242926af7f928d987b1780b214b698e6b326cf0522dc7a046715d6e19'
+    #正常软件
+    apkfile1 = r'/Users/sundiz/Desktop/apk/yxlm.danji.uu.apk'
     test(apkfile)

@@ -21,12 +21,13 @@ class CheckProcess:
 
         self.apk_file = apk_file
         if not apk_md5:
-            signature, md5 = md5_util.get_signature_and_md5(apk_file)
-            self.md5 = md5
-            self.signature = signature
+            pass
+            #signature, md5 = md5_util.get_signature_and_md5(apk_file)
+            # self.md5 = md5
+            # self.signature = signature
         else:
             self.md5 = apk_md5
-        self.su = sqlutil.SQLUtil()
+        #self.su = sqlutil.SQLUtil()
 
     def check_dulplicate_and_repack_module(self):
         """
@@ -92,7 +93,8 @@ class CheckProcess:
 
 def test_module(apk_file):
     cp = CheckProcess(apk_file)
-    dr = cp.check_dulplicate_and_repack_module()
+    # dr = cp.check_dulplicate_and_repack_module()
+    dr = (False, False)
     permission_check_result = cp.check_permission_module()
     code_check_result = cp.check_code_module()
 
@@ -116,9 +118,10 @@ def test_one(apk_file, md5, gate=0.8):
 
 
 if __name__ == '__main__':
-    apkfile = r'C:\Users\dizsun\Desktop\Yahooyouxiang_1319850.apk'
-    apkfile = r'C:\Users\dizsun\Desktop\996fe7194452eb8de4f49c04cb8099b3_86864500.apk'
-    apkfile1 = r'D:\malwares\drebin-1\6f11b19242926af7f928d987b1780b214b698e6b326cf0522dc7a046715d6e19'
+    # 恶意软件
+    apkfile = r'/Users/sundiz/Desktop/malware/6f11b19242926af7f928d987b1780b214b698e6b326cf0522dc7a046715d6e19'
+    # 正常软件
+    apkfile1 = r'/Users/sundiz/Desktop/apk/yxlm.danji.uu.apk'
     # apkfile = r'D:\apk\LINE.apk'
 
     test_module(apkfile)

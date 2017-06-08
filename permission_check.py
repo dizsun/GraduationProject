@@ -199,14 +199,26 @@ def check_jaccard_coefficent(apk_obj1, apk_obj2):
     return jaccard
 
 
-if __name__ == '__main__':
-    """gate=1.6"""
-    apkfile = r'D:\apk\aolei.flcp.apk'
-    mal_apk = r'D:\malwares\drebin-0\0a3be4156b705957d201a86250d0d7f4c5470f1737ed6d438a129a39b475397b'
-    data2 = 'data2.txt'
-    # print check_sensitive_permissions(apkfile)
-    # print check_sensitive_permissions(mal_apk)
+def test(apk_path):
+    apk_obj = APKManager.APKManager(apk_path).get_apk_obj()
+    print '应用名：', apk_obj.get_app_name()
+    print '包名：', apk_obj.get_package()
+    r, h = check_sensitive_permissions(apk_path)
+    if r:
+        print "检测结果：\n\t程序是正常软件，置信度为：", h
+    else:
+        print "检测结果：\n\t程序为恶意软件，置信度为：", 1 - h
 
+
+if __name__ == '__main__':
+    # 恶意软件
+    apkfile = r'/Users/sundiz/Desktop/malware/6f11b19242926af7f928d987b1780b214b698e6b326cf0522dc7a046715d6e19'
+    # 正常软件
+    apkfile1 = r'/Users/sundiz/Desktop/apk/yxlm.danji.uu.apk'
+    test(apkfile)
+    test(apkfile1)
+
+    # data2 = 'data2.txt'
     # f = open(data2)
     # datas = [l.strip().split(',') for l in f.readlines()]
     # f.close()
@@ -248,12 +260,12 @@ if __name__ == '__main__':
     #     print i/10.0,':',g[ii],':',b[ii]
     #     ii+=1
 
-    f = open("permissions.txt")
-    rlines = f.readlines()
-    f.close()
-    lines = [l.strip() for l in rlines]
-    f = open("java.txt", 'a')
-    for line in lines:
-        paras = line.split(':')
-        f.write('preferencesEditor.putString("%s","%s");\n' % (paras[0], paras[1]))
-    f.close()
+    # f = open("permissions.txt")
+    # rlines = f.readlines()
+    # f.close()
+    # lines = [l.strip() for l in rlines]
+    # f = open("java.txt", 'a')
+    # for line in lines:
+    #     paras = line.split(':')
+    #     f.write('preferencesEditor.putString("%s","%s");\n' % (paras[0], paras[1]))
+    # f.close()
